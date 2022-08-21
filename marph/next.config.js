@@ -2,10 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images:{
-    domains:["cdn.sanity.io"]
-  }
-
-}
+  images: {
+    domains: ["cdn.sanity.io", "www.fingermark.tech"],
+  },
+};
 
 module.exports = nextConfig
