@@ -38,7 +38,7 @@ const PartnerSlider = () => {
       customTransition="all 7s linear"
       dotListClass=""
       draggable
-      focusOnSelect={false}
+      focusOnSelect={true}
       infinite
       itemClass=""
       keyBoardControl
@@ -61,7 +61,7 @@ const PartnerSlider = () => {
         const { id, url } = singleData;
         return (
           <div key={id}>
-            <Image src={url} height="60px" width="100px" />
+            <Image src={url} height="80px" width="200px" />
           </div>
         );
       })}

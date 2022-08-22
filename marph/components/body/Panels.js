@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import panelData from "../../data.js/PanelData";
 import PrimaryButtons from "../buttons/PrimaryButtons";
+import Fade from "react-reveal/Fade";
 
 const Panels = ({panel, btnTextOne, btnTextTwo}) => {
   return (
@@ -9,25 +10,36 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
       {panel.map((indi) => {
         const { id, header, body, img } = indi;
         return (
-          <div
-            key={id}
-            className="block md:flex flex-row-reverse justify-evenly place-items-center text-left   px-4  "
-          >
-            <section>
-              {" "}
-              <Image src={img} height="423px" width="628px" objectFit="cover" />
-            </section>
+          <>
+            <div
+              key={id}
+              className="block md:flex flex-row-reverse justify-evenly place-items-center text-left   px-4  "
+            >
+              <Fade bottom duration={2000}>
+                <section>
+                  {" "}
+                  <Image
+                    src={img}
+                    height="423px"
+                    width="628px"
+                    objectFit="cover"
+                  />
+                </section>
+              </Fade>
 
-            <section className="max-w-screen-sm ">
-              <section className="w-4/5  p-4 mx-auto">
-                {" "}
-                <h1 className=" font-serif leading-10 text-4xl py-4 lg:text-5xl">
-                  {header}
-                </h1>
-                <p className="text-gray-700 text-md">{body}</p>
+              <section className="max-w-screen-sm ">
+                <Fade  top cascade>
+                  <section className="w-4/5  p-4 mx-auto">
+                    {" "}
+                    <h1 className=" font-serif leading-10 text-4xl py-4 lg:text-5xl">
+                      {header}
+                    </h1>
+                    <p className="text-gray-700 text-md">{body}</p>
+                  </section>
+                </Fade>
               </section>
-            </section>
-          </div>
+            </div>
+          </>
         );
       })}
       

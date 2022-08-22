@@ -15,7 +15,7 @@ export default function Home() {
       <Nav />
       <Hero
         primaryInfo="Human Experience Matters"
-        secondaryInfo="Fingermark™ empowers your team to unlock game-changing improvements in operational efficiency, health and safety, and customer experience."
+        secondaryInfo="Fingermarpha™ empowers your team to unlock game-changing improvements in operational efficiency, health and safety, and customer experience."
         videoLink="https://player.vimeo.com/external/461626348.sd.mp4?s=07a7a2cec45f2ec31a683f6569c08028da2803e5&profile_id=165"
         btnText="Tell me more"
       />
