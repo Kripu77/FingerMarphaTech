@@ -1,84 +1,29 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import React from "react";
-import SliderData from "../../data.js/sliderData";
-import Image from "next/image";
-import Footer from "../Footer/Footer";
 
-const BodySlider = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 7,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 4,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 2,
-    },
-  };
+import React from "react";
+
+import Footer from "../Footer/Footer";
+import PartnerSlider from "./PartnerSlider";
+import Solutions from "./Solutions";
+
+const BodySlider = ({primaryInfo}) => {
+  
   return (
     <section className="bg-green-100">
+      <Solutions />
       <section className=" text-xl  bg-green-100 overflow-hidden h-96 flex flex-col justify-center items-center  text-center">
         <div className="md:max-w-3xl mx-auto space-y-32  max-w-sm">
-          <h1 className=" md:text-3xl  tracking-wider">
-            {" "}
-            Brands we work with
-          </h1>
-          <Carousel
-            responsive={responsive}
-            dditionalTransfrom={0}
-            arrows={false}
-            autoPlay={true}
-            autoPlaySpeed={1}
-            centerMode={false}
-            className=""
-            containerClass="container-with-dots"
-            customTransition="all 7s linear"
-            dotListClass=""
-            draggable
-            focusOnSelect={false}
-            infinite
-            itemClass=""
-            keyBoardControl
-            minimumTouchDrag={140}
-            pauseOnHover
-            renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            rewind={true}
-            rewindWithAnimation={true}
-            rtl={false}
-            shouldResetAutoplay={true}
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={3}
-            swipeable
-            transitionDuration={4000}
-          >
-            {SliderData.map((singleData) => {
-              const { id, url } = singleData;
-              return (
-                <div key={id}>
-                  <Image src={url} height="60px" width="100px" />
-                </div>
-              );
-            })}
-          </Carousel>
+          <h1 className=" md:text-3xl  tracking-wider"> {primaryInfo}</h1>
+          <PartnerSlider />
         </div>
       </section>
       <div>
-        <section className=" flex justify-between items-center max-w-7xl mx-auto px-40 pb-6 text-2xl ">
-          <h1 className="underline hover:no-underline"> Want to know more? Contact Us!!</h1>
-          <section className="flex space-x-2">
+        <section className="block md:flex justify-between items-center max-w-7xl mx-auto px-4 md:px-40  text-2xl pb-10 text-center  ">
+          <h1 className="underline hover:no-underline pb-10 md:pb-0">
+            {" "}
+            Want to know more? Contact Us!!
+          </h1>
+
+          <section className="flex space-x-2 justify-around ">
             <h1> Follow Us</h1>
             <svg width="32" height="31" viewBox="0 0 32 31" fill="none">
               <path
@@ -94,7 +39,7 @@ const BodySlider = () => {
             </svg>
           </section>
         </section>
-        <Footer/>
+        <Footer />
       </div>
     </section>
   );
