@@ -21,8 +21,15 @@ const Nav = () => {
         >
           {navData.map((singleLi) => {
             return (
-              <Fade right big cascade delay={300} duration={1000}>
-                <ul key={singleLi.id}>
+              <Fade
+                right
+                big
+                cascade
+                delay={300}
+                duration={1000}
+                key={singleLi.id}
+              >
+                <ul>
                   <li className="cursor-pointer font-semibold hover:text-slate-200 ">
                     <Link href={"/" + singleLi.link}>{singleLi.header}</Link>
                   </li>
