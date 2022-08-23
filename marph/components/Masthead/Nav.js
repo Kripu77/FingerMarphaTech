@@ -20,7 +20,7 @@ const Nav = () => {
           className={isOpen ? navOpenStyling : "md:flex space-x-4 hidden"}
         >
           {navData.map((singleLi) => {
-            return (
+            return isOpen ? (
               <Fade
                 right
                 big
@@ -35,6 +35,12 @@ const Nav = () => {
                   </li>
                 </ul>
               </Fade>
+            ) : (
+              <ul>
+                <li className="cursor-pointer font-semibold hover:text-slate-200 ">
+                  <Link href={"/" + singleLi.link}>{singleLi.header}</Link>
+                </li>
+              </ul>
             );
           })}
           {isOpen ? (

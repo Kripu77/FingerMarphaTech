@@ -8,7 +8,7 @@ import { useParallax } from "react-scroll-parallax";
 
 const BodySlider = ({primaryInfo}) => {
   //parrallax effect
-  const {ref} = useParallax({speed:-10})
+  const {ref} = useParallax({speed:-2})
   return (
     <section className="bg-green-100">
       <section ref={ref} className="-z-10">
