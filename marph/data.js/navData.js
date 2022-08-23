@@ -13,12 +13,7 @@ const navData = [
     id: 3,
     header: "Contact",
     link: "contact",
-  },
-  {
-    id: 4,
-    header: "Menu Icon",
-    link:"menu"
-  },
+  }
 ];
 
 export default navData;

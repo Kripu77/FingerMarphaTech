@@ -4,7 +4,7 @@ import addData from "../../data.js/Address";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 p-10 text-white  mr-10 rounded-tr-3xl ">
+    <footer className=" z-20 bg-blue-900 p-10 text-white  mr-10 rounded-tr-3xl ">
       <section className="flex justify-between items-center mb-20">
         <h1 className="text-4xl max-w-xs ">
           Fingermarpha™ | Where Human Experience Matters{" "}

@@ -1,18 +1,17 @@
 import PrimaryButtons from "../buttons/PrimaryButtons";
-import Fade from "react-reveal/Fade"
+import Fade from "react-reveal/Fade";
 
 const Solutions = () => {
   return (
     <section className=" text-center pt-20 flex flex-col justify-center items-center space-y-20">
       <Fade top>
         <h1 className="text-4xl font-semibold">Solution Overview brochure</h1>
-      </Fade>
-      <Fade bottom>
+   
         <p className="max-w-sm text-center font-light">
           Fill out the form below to download our Solution Overview brochure.
         </p>
-      </Fade>
-      <Fade  duration={6000}>
+     
+   
         <input
           type="text"
           placeholder="Name"
@@ -23,6 +22,6 @@ const Solutions = () => {
       <PrimaryButtons name="Next ->"></PrimaryButtons>
     </section>
   );
-}
+};
 
-export default Solutions
+export default Solutions;
