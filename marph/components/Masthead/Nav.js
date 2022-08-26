@@ -2,6 +2,7 @@ import React from "react";
 import navData from "../../data.js/navData";
 import Link from "next/link";
 import Fade from "react-reveal/Fade"
+import Image from "next/image";
 
 const Nav = () => {
   //track nav state
@@ -10,9 +11,14 @@ const Nav = () => {
 
   return (
     <nav className="absolute  top-0 left-0 right-0 z-30 text-white flex justify-between items-center p-6 ">
-      <section>
+      <section className="flex ">
+        <Image
+          src="https://www.fingermark.tech/static/logomark-1d5c1b64166590f9d3062c3269afb42e.png"
+          height="40px"
+          width="50px"
+        />
         <h1 className="cursor-pointer font-bold text-4xl hover:text-slate-200">
-          <Link href="/"> Fingermapha</Link>
+          <Link href="/"> Fingermapha™</Link>
         </h1>
       </section>
       <Fade>
