@@ -1,10 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import panelData from "../../data.js/PanelData";
 import PrimaryButtons from "../buttons/PrimaryButtons";
 import Fade from "react-reveal/Fade";
+import { useParallax } from "react-scroll-parallax";
 
 const Panels = ({panel, btnTextOne, btnTextTwo}) => {
+
+  const { ref } = useParallax({
+    speed:-12,
+  });
   const panelClass =
     "block md:flex  justify-evenly place-items-center max-w-7xl mx-auto text-left  ";
   return (
@@ -13,7 +17,7 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
         const { id, header, body, img } = indi;
         return (
           <>
-            <div
+            <div ref={ref}
               key={id}
               className={id % 2==0 ?panelClass: panelClass+ " flex-row-reverse"}
             >

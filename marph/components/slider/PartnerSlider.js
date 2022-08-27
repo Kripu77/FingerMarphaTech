@@ -33,7 +33,7 @@ const PartnerSlider = () => {
       autoPlay={true}
       autoPlaySpeed={1}
       centerMode={false}
-      className=""
+      className="h-20 overflow-scroll"
       containerClass="container-with-dots"
       customTransition="all 7s linear"
       dotListClass=""
@@ -56,6 +56,8 @@ const PartnerSlider = () => {
       slidesToSlide={3}
       swipeable
       transitionDuration={4000}
+
+      
     >
       {SliderData.map((singleData) => {
         const { id, url } = singleData;

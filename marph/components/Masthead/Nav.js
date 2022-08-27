@@ -27,15 +27,8 @@ const Nav = () => {
         >
           {navData.map((singleLi) => {
             return isOpen ? (
-              <Fade
-                right
-                big
-                cascade
-                delay={300}
-                duration={1000}
-                key={singleLi.id}
-              >
-                <ul>
+              <Fade right big cascade delay={300} duration={1000}>
+                <ul key={singleLi.id}>
                   <li className="cursor-pointer font-semibold hover:text-slate-200 ">
                     <Link href={"/" + singleLi.link}>{singleLi.header}</Link>
                   </li>
