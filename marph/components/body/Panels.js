@@ -17,11 +17,14 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
         const { id, header, body, img } = indi;
         return (
           <>
-            <div ref={ref}
+            <div
+              ref={ref}
               key={id}
-              className={id % 2==0 ?panelClass: panelClass+ " flex-row-reverse"}
+              className={
+                id % 2 == 0 ? panelClass : panelClass + " flex-row-reverse"
+              }
             >
-              <Fade bottom duration={2000}>
+              <Fade left duration={1200} cascade>
                 <section>
                   {" "}
                   <Image
@@ -29,13 +32,10 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
                     height="423px"
                     width="628px"
                     objectFit="cover"
-                    
                   />
                 </section>
-              </Fade>
 
-              <section className="max-w-screen-sm ">
-                <Fade  top cascade>
+                <section className="max-w-screen-sm ">
                   <section className="w-4/5  mx-auto">
                     {" "}
                     <h1 className=" font-serif leading-10 text-4xl lg:text-5xl">
@@ -43,8 +43,8 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
                     </h1>
                     <p className="text-gray-700 text-md">{body}</p>
                   </section>
-                </Fade>
-              </section>
+                </section>
+              </Fade>
             </div>
           </>
         );

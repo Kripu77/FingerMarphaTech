@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade"
 
 const InTouch = () => {
   return (
-    <section className="p-20 max-w-screen-xl mx-auto ">
+    <section className=" p-8 md:p-20 max-w-screen-xl mx-auto ">
       <Fade left cascade>
         <section className="space-y-10 text-center">
           <h1 className="text-4xl font-semibold text-gray-800">

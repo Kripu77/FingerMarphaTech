@@ -12,16 +12,16 @@ const IndustriesCard = () => {
           <>
             <section className={id % 2 == 0 ? "" : "bg-gray-100"} key={id}>
               <Fade>
-                <section className="p-20">
+                <section className="p-2 md:p-20 xl:flex justify-between xl:space-x-10">
                   <Image
                     src={url}
                     height="1000px"
                     width="1000px"
                     className="rounded-xl"
                   ></Image>
-                  <section className="pt-10 space-y-6">
-                    <h1 className="text-5xl font-serif">{header}</h1>
-                    <h1 className="text-3xl font-serif ">{secondaryHeader}</h1>
+                  <section className="p-2 md:pt-10 space-y-6">
+                    <h1 className="text-3xl md:text-5xl font-serif">{header}</h1>
+                    <h1 className="text-2xl md:text-3xl font-serif ">{secondaryHeader}</h1>
                     <p className="text-xl font-dark space-y-4">{info.split(".").map((d, index)=>{
                         return (
                           <div key={index}>
