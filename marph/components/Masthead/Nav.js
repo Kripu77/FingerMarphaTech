@@ -17,7 +17,7 @@ const Nav = () => {
           height="40px"
           width="50px"
         />
-        <h1 className="cursor-pointer font-bold text-4xl hover:text-slate-200">
+        <h1 className="cursor-pointer font-bold text-3xl hover:text-slate-200">
           <Link href="/"> Fingermapha™</Link>
         </h1>
       </section>

@@ -16,7 +16,7 @@ const IndustriesCard = () => {
                   <Image
                     src={url}
                     height="1000px"
-                    width="1000px"
+                    width="900px"
                     className="rounded-xl"
                   ></Image>
                   <section className="p-2 md:pt-10 space-y-6">

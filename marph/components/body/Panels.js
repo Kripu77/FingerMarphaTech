@@ -7,12 +7,14 @@ import { useParallax } from "react-scroll-parallax";
 const Panels = ({panel, btnTextOne, btnTextTwo}) => {
 
   const { ref } = useParallax({
-    speed:-12,
+     translate:[100, -30] ,
+    scale:[0.4, 1.4],
+   
   });
   const panelClass =
     "block md:flex  justify-evenly place-items-center max-w-7xl mx-auto text-left  ";
   return (
-    <section className=" max-w-8xl mx-auto space-y-28 ">
+    <section className=" max-w-8xl mx-auto space-y-28 overflow-hidden ">
       {panel.map((indi) => {
         const { id, header, body, img } = indi;
         return (
@@ -49,9 +51,9 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
           </>
         );
       })}
-      
+
       <section className="text-right pr-20 space-y-2">
-        <PrimaryButtons name={btnTextOne} />
+        <PrimaryButtons name={btnTextOne} className="font-thin " />
         <br />
         <PrimaryButtons name={btnTextTwo} />
       </section>

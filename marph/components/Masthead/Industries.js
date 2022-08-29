@@ -18,11 +18,11 @@ const Industries = () => {
         </section>
         <section
           ref={ref}
-          className="absolute  min-w-full min-h-screen flex flex-col justify-center items-center space-y-20 text-white text-center backdrop-blur-sm backdrop-opacity-95"
+          className="absolute  min-w-full min-h-screen flex flex-col justify-center items-center space-y-10 text-white text-center backdrop-blur-sm backdrop-opacity-95"
         >
           <Fade delay={1500}>
-            <h1 className="text-7xl "> Industries</h1>
-            <h1 className="max-w-screen-sm text-2xl">
+            <h1 className="text-5xl "> Industries</h1>
+            <h1 className="max-w-screen-sm text-lg font-thin">
               {" "}
               Our Partners are the leaders in the areas they are involved in. We
               aid their purpose through our cutting edge Technology
