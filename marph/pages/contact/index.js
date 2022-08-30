@@ -8,7 +8,7 @@ import Nav from '../../components/Masthead/Nav'
 const index = () => {
   return (
   <main>
-    <Nav/>
+ 
     <Contact/>
     <InTouch/>
     <Map/>

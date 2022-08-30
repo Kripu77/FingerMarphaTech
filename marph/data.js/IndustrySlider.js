@@ -8,7 +8,7 @@ const data = [
   {
     id: 2,
     header:
-      " Amazing and impressive - I think Fingermark technology is a great solution that could be leveraged in many parts of our business for a broad range of applications.",
+      " Amazing and impressive - I think Fingermarpha technology is a great solution that could be leveraged in many parts of our business for a broad range of applications.",
     contact:
       "Ludovic Le Cam, Executive Head of Safety and Sustainable Development Anglo American",
   },

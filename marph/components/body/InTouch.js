@@ -25,7 +25,7 @@ const InTouch = () => {
           </section>
           <section>
             <h1 className="text-green-500"> Accounts</h1>
-            <h1>accounts@fingermark.tech</h1>
+            <h1>accounts@fingermarpha.tech</h1>
           </section>
         </section>
       </Fade>

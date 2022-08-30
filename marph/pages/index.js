@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Panels from '../components/body/Panels'
 import Hero from '../components/Masthead/Hero'
 import Nav from '../components/Masthead/Nav'
+import ScrollToTop from '../components/Scroll/ScrollToTop'
 import SEO from '../components/SEO/SEO'
 import BodySlider from '../components/slider/BodySlider'
 import panelData from '../data.js/PanelData'
@@ -10,9 +11,9 @@ import panelData from '../data.js/PanelData'
 
 export default function Home() {
   return (
-    <main>
-      <SEO />
-      <Nav />
+    <main >
+  
+   
       <Hero
         primaryInfo="Human Experience Matters"
         secondaryInfo="Fingermarpha™ empowers your team to unlock game-changing improvements in operational efficiency, health and safety, and customer experience."
@@ -21,6 +22,7 @@ export default function Home() {
       />
       <Panels panel={panelData} btnTextOne="Our QSR Tecgnology" btnTextTwo="Agriculture & Mining" />
       <BodySlider primaryInfo={"Brands We Work With!"} />
+      <ScrollToTop/>
     </main>
   );
 }
