@@ -29,7 +29,7 @@ const Nav = () => {
             return isOpen ? (
               <Fade right big cascade delay={300} duration={1000}>
                 <ul key={singleLi.id}>
-                  <li className="cursor-pointer font-semibold hover:text-slate-200 ">
+                  <li className="cursor-pointer font-semibold hover:text-slate-200 " onClick={()=>setIsOpen(falses)}> 
                     <Link href={"/" + singleLi.link}>{singleLi.header}</Link>
                   </li>
                 </ul>

@@ -1,10 +1,6 @@
-import Head from 'next/head'
-
 import Panels from '../components/body/Panels'
 import Hero from '../components/Masthead/Hero'
-import Nav from '../components/Masthead/Nav'
 import ScrollToTop from '../components/Scroll/ScrollToTop'
-import SEO from '../components/SEO/SEO'
 import BodySlider from '../components/slider/BodySlider'
 import panelData from '../data.js/PanelData'
 
