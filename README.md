@@ -1,2 +1,2 @@
 # FingerMarphaTech
-A conceptcual Dev Shop Site
+A conceptual Dev Shop Site
