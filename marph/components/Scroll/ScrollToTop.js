@@ -7,7 +7,7 @@ const ScrollToTop = () => {
   const handleScroll = () => {
     setIsScrollClicked(!scrollClicked);
     window.scrollTo({ top:0, left: 0, behavior: "smooth" });
-    console.log("I am running");
+   
   };
 
   return (

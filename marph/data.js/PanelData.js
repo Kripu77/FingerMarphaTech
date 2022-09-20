@@ -8,7 +8,7 @@ const panelData = [
   {
     id: 2,
     header: "We don’t believe in tech for tech’s sake.",
-    body: "At Fingermarpha™ we understand and apply technology to create scalable decision engines and user interfaces that unlock game-changing improvements in: productivity and profitability; health and safety; and customer experience.",
+    body: "At Marphatech™ we understand and apply technology to create scalable decision engines and user interfaces that unlock game-changing improvements in: productivity and profitability; health and safety; and customer experience.",
     img: "https://cdn.sanity.io/images/wdfk0n2i/production/f69f0cc1eb7b1533bf0ad2da2c5ce3576b288daa-1280x720.jpg?w=640&h=360&fit=crop&fm=webp",
   },
   {

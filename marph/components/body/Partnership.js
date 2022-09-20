@@ -9,7 +9,7 @@ const Partnership = () => {
           <h1 className="text-bold text-xl md:text-3xl">
             From long-standing partnerships with the world’s largest quick
             service restaurant (QSR) brands, to collaboration with mining
-            industry giants, Fingermarpha™ is focused on evolving and enhancing
+            industry giants, Marphatech™ is focused on evolving and enhancing
             both operational efficiency and UX.
           </h1>
           <h1 className="text-lg md:text-xl">

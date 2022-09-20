@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className=" z-20 bg-blue-900 p-10 text-white  md:mr-10 md:rounded-tr-3xl ">
       <section className=" flex flex-col items-start space-y-4  md:flex md:flex-row md:justify-between md:items-center  mb-20">
         <h1 className=" text-2xl md:text-4xl max-w-xs ">
-          Fingermarpha™ | Where Human Experience Matters{" "}
+          Marphatech™ | Where Human Experience Matters{" "}
         </h1>
         <section>
           <Image
@@ -32,7 +32,7 @@ const Footer = () => {
       <section className="pt-9 md:flex justify-between text-center ">
         <h1 className="whitespace-nowrap"> Privacy Policy</h1>
         <h1>
-          © Fingermarpha 2022 |{" "}
+          © Marphatech 2022 |{" "}
           <span className="font-italic">Leading the Tech</span>
         </h1>
       </section>

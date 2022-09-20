@@ -21,11 +21,11 @@ const InTouch = () => {
         <section className="py-24 text-2xl  font-thin leading-10 space-y-5">
           <section>
             <h1 className="text-green-500"> Support</h1>
-            <h1>fingermarphaglobal.zendesk.com</h1>
+            <h1>marphatechlobal.zendesk.com</h1>
           </section>
           <section>
             <h1 className="text-green-500"> Accounts</h1>
-            <h1>accounts@fingermarpha.tech</h1>
+            <h1>accounts@marphatechglobal.tech</h1>
           </section>
         </section>
       </Fade>

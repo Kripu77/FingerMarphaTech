@@ -12,7 +12,7 @@ const IndustriesCard = () => {
           <>
             <section className={id % 2 == 0 ? "" : "bg-gray-100"} key={id}>
               <Fade>
-                <section className="p-2 md:p-20 xl:flex justify-between xl:space-x-10">
+                <section className=" md:p-20 mx-auto xl:flex justify-between xl:space-x-10">
                   <Image
                     src={url}
                     height="1000px"

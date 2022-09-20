@@ -6,11 +6,11 @@ import { useParallax } from "react-scroll-parallax";
 
 const Panels = ({panel, btnTextOne, btnTextTwo}) => {
 
-  const { ref } = useParallax({
-     translate:[100, -30] ,
-    scale:[0.4, 1.4],
+  // const { ref } = useParallax({
+  //    translate:[100, -30] ,
+  //   scale:[0.4, 1.4],
    
-  });
+  // });
   const panelClass =
     "block md:flex  justify-evenly place-items-center max-w-7xl mx-auto text-left  ";
   return (
@@ -20,7 +20,7 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
         return (
           <>
             <div
-              ref={ref}
+            
               key={id}
               className={
                 id % 2 == 0 ? panelClass : panelClass + " flex-row-reverse"
