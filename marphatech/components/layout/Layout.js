@@ -5,7 +5,7 @@ import SEO from "../SEO/SEO";
 const Layout = ({ children }) => {
   return (
     <main className="relative">
-        <SEO/>
+      <SEO />
       <Nav />
       <main>{children}</main>
       <ScrollToTop />

@@ -4,12 +4,11 @@ import PrimaryButtons from "../buttons/PrimaryButtons";
 import Fade from "react-reveal/Fade";
 import { useParallax } from "react-scroll-parallax";
 
-const Panels = ({panel, btnTextOne, btnTextTwo}) => {
-
+const Panels = ({ panel, btnTextOne, btnTextTwo }) => {
   // const { ref } = useParallax({
   //    translate:[100, -30] ,
   //   scale:[0.4, 1.4],
-   
+
   // });
   const panelClass =
     "block md:flex  justify-evenly place-items-center max-w-7xl mx-auto text-left  ";
@@ -20,7 +19,6 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
         return (
           <>
             <div
-            
               key={id}
               className={
                 id % 2 == 0 ? panelClass : panelClass + " flex-row-reverse"
@@ -38,7 +36,7 @@ const Panels = ({panel, btnTextOne, btnTextTwo}) => {
                 </section>
 
                 <section className="max-w-screen-sm ">
-                  <section className="w-4/5  mx-auto">
+                  <section className="w-4/5  space-y-4 mx-auto">
                     {" "}
                     <h1 className=" font-serif leading-10 text-4xl lg:text-5xl">
                       {header}

@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     header:
-      '"We Decided to work with Fingermapha™ because they act as our Partner."',
+      '"We Decided to work with Marphatech™ because they act as our Partner."',
     contact: "Jeff Monico",
   },
   {
