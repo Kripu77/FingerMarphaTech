@@ -1,5 +1,5 @@
 # FingerMarphaTech
-A conceptual Dev Shop Site:
+A conceptual Dev Shop:
 
 
 Link: https://marphatech.vercel.app/
